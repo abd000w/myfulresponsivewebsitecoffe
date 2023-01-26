@@ -1,0 +1,222 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     list-style: none;
+   }
+   
+   body {
+     background-color: #F4F1EE;
+   }
+   
+   .header-container {
+     padding: 33px 165px;
+   }
+   
+   .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+   
+   .nav-item {
+     display: flex;
+   }
+   
+   .nav-item .nav-item__list {
+     margin: 0px 13px;
+   }
+   
+   .nav-item .nav-item__list .nav-list__link {
+     text-decoration: none;
+     color: #000000;
+     font-family: "nav-link";
+     font-size: 16px;
+     line-height: 19.5px;
+     font-style: normal;
+   }
+   
+   .user-search .burger {
+     display: none;
+   }
+   
+   .user-search .search img {
+     margin-top: 4px;
+     margin-right: 15px;
+   }
+   
+   .user-search .user img {
+     width: 35px;
+   }
+   
+   .user-search {
+     display: flex;
+     margin-top: 20px;
+   }
+   
+   .hero-img {
+     margin-top: 64px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+   }
+   
+   .hero-img img {
+     width: 100%;
+   }
+   
+   .text-center h1 {
+     max-width: 650px;
+     font-family: "header-text";
+     font-style: normal;
+     font-weight: 400;
+     font-size: 45px;
+     line-height: 70px;
+     letter-spacing: 0.04em;
+     margin-bottom: 33px;
+     color: #232020;
+   }
+   
+   .text-center p {
+     max-width: 521px;
+     font-family: "under-thim";
+     font-style: normal;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 30px;
+     letter-spacing: 0.04em;
+     color: #404040;
+     margin-bottom: 55px;
+   }
+   
+   .buttons button {
+     margin: 0 15px;
+     width: 140px;
+     height: 50px;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+     color: #fff;
+     background-image: linear-gradient(top, rgba(255, 255, 255, 0.2) 1px, rgba(255, 255, 255, 0) 1px, rgba(0, 0, 0, 0.1019607843) 100%);
+     font-size: 16px;
+     font-family: "under-thim";
+     animation: anime 1s infinite ease-in-out alternate;
+     -webkit-animation: anime 1s infinite ease-in-out alternate;
+     box-shadow: 0 60px 12px -18px rgba(0, 0, 0, 0.1), 0 60px 20px -12px rgba(0, 0, 0, 0.1);
+   }
+   
+   button.signup {
+     background: rgb(255, 0, 140);
+     border: 1px solid rgb(255, 0, 168);
+   }
+   
+   button.signin {
+     background: rgb(21, 255, 0);
+     border: 1px solid rgb(29, 216, 12);
+   }
+   
+   button.signin {
+     -webkit-animation-delay: 0.3s;
+             animation-delay: 0.3s;
+   }
+   
+   @-webkit-keyframes anime {
+     100% {
+       transform: translateY(20px);
+       -webkit-transform: translateY(20px);
+       -moz-transform: translateY(20px);
+       -o-transform: translateY(20px);
+     }
+   }
+   
+   @keyframes anime {
+     100% {
+       transform: translateY(20px);
+       -webkit-transform: translateY(20px);
+       -moz-transform: translateY(20px);
+       -o-transform: translateY(20px);
+     }
+   }
+   @font-face {
+     font-family: "nav-link";
+     src: url(/fonts/montserrat-v25-latin-regular.ttf);
+   }
+   @font-face {
+     font-family: "header-text";
+     src: url(/fonts/zcool-xiaowei-v14-latin-regular.ttf);
+   }
+   @font-face {
+     font-family: "under-thim";
+     src: url(/fonts/open-sans-v34-latin-regular.ttf);
+   }
+   @media screen and (max-width: 1200px) {
+     .text-center h1 {
+       font-size: 35px;
+       line-height: 50px;
+       letter-spacing: 0.01em;
+     }
+   }
+   @media screen and (max-width: 1080px) {
+     .header-container {
+       padding: 0;
+     }
+     .logo {
+       padding-left: 60px;
+     }
+     .user-search {
+       padding-right: 60px;
+     }
+     .hero-img {
+       padding-right: 60px;
+       padding-left: 60px;
+     }
+   }
+   @media screen and (max-width: 835px) {
+     .nav-item {
+       display: none;
+     }
+     .user-search .burger {
+       display: block;
+       margin-top: 9px;
+       margin-right: 15px;
+     }
+     .text-center h1 {
+       font-size: 30px;
+       line-height: 40px;
+     }
+     .text-center p {
+       font-size: 15px;
+     }
+   }
+   @media screen and (max-width: 760px) {
+     .hero-img {
+       display: flex;
+       flex-direction: column;
+     }
+     .text-center .buttons {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 20px;
+     }
+     .text-center h1 {
+       text-align: center;
+     }
+     .text-center p {
+       text-align: center;
+     }
+   }
+   @media screen and (max-width: 450px) {
+     .user-search {
+       padding-right: 10px;
+     }
+     .logo {
+       padding-left: 10px;
+     }
+   }
+   @media screen and (max-width: 390px) {
+     .buttons button {
+       width: 100px;
+     }
+   }/*# sourceMappingURL=main.css.map */
